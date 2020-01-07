@@ -1,0 +1,26 @@
+{
+  "name": "ccd-central-test-definitions",
+  "version": "1.0.0",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "json-stringify-pretty-compact": "^2.0.0",
+    "matcher": "^2.0.0",
+    "minimist": "^1.2.0",
+    "moment": "^2.24.0",
+    "xlsx": "^0.15.1",
+    "xlsx-populate": "^1.20.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-mocha": "^6.2.1",
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "test": "mocha ./src/test",
+    "lint-fix": "eslint src --fix",
+    "json2xlsx": "node ./bin/json2xlsx",
+    "xlsx2json": "node ./bin/xlsx2json"
+  },
+  "license": "MIT"
+}
